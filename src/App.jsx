@@ -27,17 +27,11 @@ import Testimonials from './components/Testimonials';
     <ul id='nav-menu' className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
       <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
       <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-      <li><a href="#">Menu</a>
-        <ul>
-          <li><Link to="/menu/pizzas" onClick={() => setIsMenuOpen(false)}>  Pizzas</Link></li>
-          <li><Link to="/menu/pasta" onClick={() => setIsMenuOpen(false)}>Pasta</Link></li>
-          <li><Link to="/menu/salads" onClick={() => setIsMenuOpen(false)}>Salads</Link></li>
-          <li><Link to="/menu/drinks" onClick={() => setIsMenuOpen(false)}>Drinks</Link></li>
-        </ul>
-      </li>
+      <li><link to="/services" onClick={() => setisMenuOpen(false)}>Services</Link></li>
       <li><Link to="/contacts" onClick={() => setIsMenuOpen(false)}>Contacts</Link></li>
-      <li><Link to="/quickbites" onClick={() => setIsMenuOpen(false)}>Quick Bites</Link></li>
-      <li><Link to="/menu" onClick={() => setIsMenuOpen(false)}>Menu</Link></li>
+      <li><Link to="/testimonials" onClick={() => setIsMenuOpen(false)}>Testimonials</Link></li>
+      <li><Link to="/blogs" onClick={() => setIsMenuOpen(false)}>Blogs</Link></li>
+      <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>gallery</Link></li>
     </ul>
   </nav>
   {/* Routes for the individual pages/components */}
