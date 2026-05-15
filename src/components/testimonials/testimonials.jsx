@@ -5,6 +5,7 @@ import testimonials1 from '../../assets/testimonials1.jpg'
 import testimonials2 from '../../assets/testimonials2.jpg'
 import testimonials3 from '../../assets/testimonials3.jpg'
 import testimonials4 from '../../assets/testimonials4.jpg'
+import promoVideo from '../../assets/videos/testimonial.mp4'
 
 // Client reviews data
 const reviews = [
@@ -40,7 +41,7 @@ function Testimonials() {
 
       {/* Review cards grid */}
       <div className='testimonials-grid'>
-        {reviews.map(function(review, index) {
+        {reviews.map(function (review, index) {
           return (
             <div className='review-card' key={index}>
               <div className='review-header'>
@@ -60,18 +61,18 @@ function Testimonials() {
 
       {/* Video testimonial section */}
       <div className='video-testimonial'>
-        <h3>Watch a Client Story</h3>
+        <h3>A Look at What We Do</h3>
         <div className='video-container'>
-          <iframe
+          <video
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/YSaxPROTeHY?rel=0"
-            title="Massage Therapy Overview"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{ borderRadius: '10px' }}
-          />
+            src={promoVideo}
+            controls
+            muted
+            style={{ borderRadius: '10px', objectFit: 'cover' }}
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
         <p className='video-caption'>A look at what goes into a professional massage therapy session</p>
       </div>

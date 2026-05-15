@@ -24,7 +24,7 @@ const allImages = [
 
 function Gallery() {
   // showAll toggles between 4 and all 8 images
-  const [showAll,  setShowAll]  = useState(false)
+  const [showAll, setShowAll] = useState(false)
   // lightboxIndex stores which image is open in the lightbox (-1 = closed)
   const [lightboxIndex, setLightboxIndex] = useState(-1)
 
@@ -54,7 +54,7 @@ function Gallery() {
 
       {/* Image grid */}
       <div className='gallery-grid'>
-        {visibleImages.map(function(image, index) {
+        {visibleImages.map(function (image, index) {
           return (
             <img
               key={index}
@@ -85,7 +85,7 @@ function Gallery() {
           />
 
           <button className='lightbox-close' onClick={() => setLightboxIndex(-1)}>✕</button>
-          <button className='lightbox-nav left'  onClick={(e) => { e.stopPropagation(); prevImage() }}>‹</button>
+          <button className='lightbox-nav left' onClick={(e) => { e.stopPropagation(); prevImage() }}>‹</button>
           <button className='lightbox-nav right' onClick={(e) => { e.stopPropagation(); nextImage() }}>›</button>
 
           <p className='lightbox-caption'>{visibleImages[lightboxIndex].alt}</p>

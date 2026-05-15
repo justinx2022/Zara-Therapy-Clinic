@@ -7,8 +7,8 @@ function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [error,   setError]   = useState('')
-  const [sent,    setSent]    = useState(false)
+  const [error, setError] = useState('')
+  const [sent, setSent] = useState(false)
 
   // Handle form submission
   function handleSubmit(e) {
@@ -99,10 +99,10 @@ function Contact() {
         </div>
 
         <div className='contact-details'>
-          <p>📍 Moi Avenue, Nairobi CBD, Kenya</p>
-          <p>📞 <a href='tel:+254794080373'>+254 794 080 373</a></p>
-          <p>✉️ <a href='mailto:zaratherapyclinic@gmail.com'>zaratherapyclinic@gmail.com</a></p>
-          <p>🕐 Monday – Saturday: 8:00 AM – 6:00 PM</p>
+          <p>Moi Avenue, Nairobi CBD, Kenya</p>
+          <p><a href='tel:+254794080373'>+254 794 080 373</a></p>
+          <p><a href='mailto:zaratherapyclinic@gmail.com'>zaratherapyclinic@gmail.com</a></p>
+          <p>Monday – Saturday: 8:00 AM – 6:00 PM</p>
         </div>
       </div>
     </div>

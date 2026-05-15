@@ -26,14 +26,14 @@ function App() {
       <div id="home"><Hero /></div>
 
       <div className='container'>
-        <div id="services">
-          <Title subTitle='Our Services' title='What We Offer' />
-          <Services />
-        </div>
-
         <div id="about">
           <Title subTitle='About Us' title='Our Story' />
           <About />
+        </div>
+
+        <div id="services">
+          <Title subTitle='Our Services' title='What We Offer' />
+          <Services />
         </div>
 
         <div id="products">
