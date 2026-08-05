@@ -1,6 +1,6 @@
 # Zara Therapy Clinic Website
 **ADSE2509 — Web Development Project**
-Student: Adan Yusuf | Semester 1
+Student: Justin Odhiambo| Semester 1
 
 ---
 
